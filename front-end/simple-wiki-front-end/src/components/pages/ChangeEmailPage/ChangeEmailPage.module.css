@@ -1,0 +1,21 @@
+.pageSpecific {
+    text-align: left;
+}
+
+.button {
+    background-color: #0645ad;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #003087;
+}
+
+.emailInput {
+    width: 500px;
+}

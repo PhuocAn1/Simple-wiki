@@ -1,0 +1,77 @@
+/* This is the css for wiki text rendering */
+@import url("WikiHeading.css");
+@import url("WikiTOC.css");
+@import url("WikiImage.css");
+
+/* Styling wiki link */
+
+.preview-content .wiki-link {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.preview-content .red-link {
+    color: red;
+    text-decoration: none;
+}
+
+.preview-content .external {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+/* ---------------------- */
+
+/* Styling wikitable and borderless */
+/* Wikitable */
+.preview-content .wikitable {
+    background-color: #f8f9fa;
+    color: #202122;
+    margin: 16px 0;
+    border: 1px solid #a2a9b1;
+    border-collapse: collapse;
+}
+
+.preview-content .wikitable > caption {
+    font-weight: bold;
+}
+
+.preview-content .wikitable > * > tr > th {
+    padding: 3px 6px;
+    background-color: #eaecf0;
+    color: #202122;
+    text-align: center;
+    border: 1px solid #a2a9b1;
+}
+
+.preview-content .wikitable > * > tr > td {
+    padding: 3px 6px;
+    border: 1px solid #a2a9b1;
+}
+
+/* Borderless */
+.preview-content table {
+    background-color: #f8f9fa;
+    color: #202122;
+    margin: 16px 0;
+    border-collapse: collapse;
+}
+
+.preview-content table > caption {
+    font-weight: bold;
+}
+
+.preview-content table > * > tr > th {
+    padding: 3px 6px;
+    background-color: #eaecf0;
+    color: #202122;
+    text-align: center;
+}
+
+.preview-content table > * > tr > td {
+    padding: 3px 6px;
+}
+
+/* -------------------------------- */
+
+

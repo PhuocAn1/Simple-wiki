@@ -1,0 +1,15 @@
+//Template using fetch
+useEffect(() => {
+    fetch('http://localhost:8080/simple-wiki/home')
+      .then(response => response.text)
+      .then(data => setTitle(data))
+      .catch(error => console.error('Error fetching home:', error));
+   //loadHome();
+},[]);
+
+//Template using axios
+const loadHome = async () => {
+    const result = await axios.get('http://localhost:8080/simple-wiki/home')
+    console.log(result);
+    setTitle(result.data)
+}

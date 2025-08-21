@@ -1,0 +1,49 @@
+.searchContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+/* Suggestions dropdown */
+.suggestionsDropdown {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  width: 310px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 100%;
+  left: 20px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.suggestionsDropdown a {
+  text-decoration: none;
+  color: #222;
+  display: block;
+}
+
+.suggestionsDropdown li {
+  padding: 0.5rem;
+  cursor: pointer;
+  margin: 0;
+}
+
+.suggestionItem {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestionItem:hover,
+.suggestionItem:focus,
+.suggestionItem.active {
+  background-color: #f0f0f0;
+  outline: none;
+}

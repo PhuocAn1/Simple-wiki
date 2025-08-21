@@ -1,0 +1,118 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  flex-grow: 0;
+}
+
+.search-form {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.search-input {
+  padding: 5px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-right: none;
+}
+
+.search-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+/* .auth-links {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-link {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+} */
+
+.create-account-container {
+  padding: 20px 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.create-account-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.policy-link {
+  color: #0645ad;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hint {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+  text-align: left;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #0645ad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #003087;
+}
+
+.error-message {
+  color: #dc3545; /* Red for errors */
+  margin-bottom: 1rem;
+}
+
+.success-message {
+  color: #28a745; /* Green for success */
+  margin-bottom: 1rem;
+}

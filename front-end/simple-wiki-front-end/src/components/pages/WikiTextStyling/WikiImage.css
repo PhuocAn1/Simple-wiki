@@ -1,0 +1,90 @@
+/* Styling the image */
+.preview-content .thumb {
+    border: 1px solid #ccc;
+    padding: 5px;
+    background-color: #f9f9f9;
+    
+}
+
+/* Styles for thumb nail images */
+/* Style for default thumbnails based on img's type-thumb and location-right class */
+.preview-content .thumb:has(img.location-right), .preview-content .thumb:has(img.type-thumb) {
+    margin: 8px 0 20px 20px;
+    text-align: center;
+    width: fit-content;
+    float: right;
+}
+
+/* Style for left-aligned thumbnails based on img's location-left class */
+.preview-content .thumb:has(img.location-left) {
+    float: left;
+    margin: 8px 20px 20px 0;
+}
+
+/* Style for center-aligned thumbnails based on img's location-center class */
+.preview-content .thumb:has(img.location-center) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Center the block element */
+    float: none; /* Remove floating */
+}
+/* --------------------------------------------------------------------------- */
+
+/* Styles for normal image */
+/* Location center */
+.preview-content img.location-center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    float: none; /* Ensure no floating for standalone images */
+}
+
+/* Location left */
+.preview-content img.location-left {
+    float: left;
+}
+
+/* Location right */
+.preview-content img.location-right {
+    text-align: center;
+    width: fit-content;
+    float: right;
+}
+
+/* Styles for frame */
+/* Container for the right-floated frame */
+.thumb.tright {
+    margin: 0.5em 0 0.8em 1.4em; /* Matches Wikipedia's typical spacing */
+    clear: right; /* Prevents overlap with other floated elements */
+    max-width: 250px; /* Limits frame width for consistency */
+    background-color: #f8f9fa; /* Light background for the frame */
+    border: 1px solid #c8ccd1; /* Subtle border */
+    padding: 3px; /* Inner spacing */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.preview-content .thumb:has(img.type-frame) {
+    display: block; /* Ensures image takes full width of container */
+    max-width: 100%; /* Responsive image scaling */
+    height: auto; /* Maintains aspect ratio */
+    border: 1px solid #c8ccd1; /* Border around the image */
+}
+
+.preview-content .framecaption {
+    text-align: center; /* Centers caption text */
+    font-size: 0.9em; /* Slightly smaller font for caption */
+    color: #202122; /* Dark text for readability */
+    padding: 4px 0; /* Vertical padding for caption */
+    background-color: #f8f9fa; /* Matches frame background */
+    border-top: 1px solid #c8ccd1; /* Separator between image and caption */
+}
+
+/* ------------------------------------------------------------------------------- */
+.thumbinner {
+    max-width: 100%;
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.preview-content {
+    overflow: hidden; /* Prevents overflow from floated elements */
+}

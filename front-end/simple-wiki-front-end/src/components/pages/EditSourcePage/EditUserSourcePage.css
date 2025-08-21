@@ -1,0 +1,197 @@
+.subheader {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+}
+
+.subheader-link {
+  text-decoration: none;
+  color: #0645ad;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.subheader-link.active {
+  border-bottom: 2px solid #0645ad;
+  color: #222;
+}
+
+.subheader-link:hover:not(.active) {
+  text-decoration: underline;
+}
+
+.page-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.page-title {
+    text-align: left;
+}
+
+.editor-toolbar-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.editor-toolbar {
+  display: flex;
+  gap: 10px;
+}
+
+.editor-toolbar button {
+  background: none;
+  border: 1px solid #a2a9b1;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.editor-toolbar button:hover {
+  background-color: #f0f0f0;
+}
+
+/* .editor-textarea {
+  width: 100%;
+  height: 300px;
+  border: 1px solid #a2a9b1;
+  background-color: #fff;
+  font-family: monospace;
+  resize: vertical;
+} */
+
+.preview-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0645ad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.preview-button:hover {
+  background-color: #003087;
+}
+
+/* ------------------------------------------ */
+
+.editor-container {
+  display: flex;
+  gap: 20px;
+}
+
+.editor-textarea {
+  width: 50%;
+  height: 400px;
+  padding: 10px;
+  border: 1px solid #a2a9b1;
+  background-color: #fff;
+  font-family: monospace;
+  resize: none;
+}
+
+.preview-pane {
+  width: 50%;
+  padding: 0px 10px;
+  border: 1px solid #a2a9b1;
+  background-color: #fff;
+}
+/* Preview-content */
+.preview-content {
+  /* min-height: 280px;  Ensure some height for content */
+  min-height: 400px;
+  max-height: 400px;
+  /* border: 1px solid #ccc; */
+  /* padding: 10px; */
+  overflow-y: auto;
+  text-align: left;
+}
+
+.preview-reset {
+  all: unset;
+  text-align: left;
+}
+
+/* Specific styles for display page */
+.display-page .preview-content {
+  max-height: none; /* Remove height limit on display page */
+  overflow-y: visible; /* Remove scrollbar on display page */
+  min-height: auto; /* Allow content to determine height */
+}
+
+/* --------------------------------------------------------- */
+.reload-button, .preview-button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: #0645ad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reload-button {
+  display: none; /* Hidden by default */
+}
+
+.reload-button.visible {
+  display: flex; /* Show when class is added */
+}
+
+.reload-button:hover {
+  background-color: #003087;
+}
+
+.editor-toolbar-right-button-group {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  align-items: center; /* Align buttons vertically */
+}
+
+/* ------------------------------------------------------------- */
+.edit-options {
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.summary-textarea {
+  margin: 10px 0px;
+  padding: 5px 8px;
+  width: 80%;
+  height: 20px;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  resize: none;
+}
+
+.edit-buttons button {
+  margin-right: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+}
+
+.save-button, .show-preview-button {
+  color: white;
+  background-color: #0645ad;
+}
+
+.save-button:hover, .show-preview-button:hover {
+  background-color: #003087; 
+}
+
+.cancel-button {
+  background-color: white;
+  color: red;
+}
+
+.cancel-button:hover {
+  background-color: red;
+  color: white;
+}

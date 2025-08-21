@@ -1,0 +1,142 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.search-form {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 20px;
+}
+
+.search-input {
+  padding: 5px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-right: none;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+/* .auth-links {
+  display: flex;
+  gap: 10px;
+}
+
+.auth-link {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+} */
+
+.logout-button {
+  color: #0645ad;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.logout-button:hover {
+  text-decoration: underline;
+}
+
+/* ... (previous styles remain the same) */
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.user-link-container {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.user-icon {
+  margin-right: 5px;
+}
+
+.username {
+  position: relative;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  margin-left: 5px;
+  transition: transform 0.2s ease;
+  transform: rotate(0deg);
+  display: inline-block;
+}
+
+.dropdown-arrow.open {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  right: 0;
+  background-color: #f8f8f8;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 4px;
+  padding: 8px 0;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+
+.dropdown-menu::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #f8f8f8;
+}
+
+.logout-icon {
+  font-size: 14px;
+}
+
+.logout-icon:hover {
+  cursor: pointer;
+}
+
+.dropdown-link {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 8px 16px;
+}
+/* ... (rest of the existing dropdown styles remain the same) */

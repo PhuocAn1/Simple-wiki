@@ -1,0 +1,89 @@
+.login-container {
+  padding: 20px 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-note {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 96%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-button {
+  padding: 10px 20px;
+  background-color: #0645ad;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-button:hover {
+  background-color: #003087;
+}
+
+.join-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.join-link p {
+  margin: 0 0 10px 0;
+  color: #666;
+}
+
+.join-button {
+  display: inline-block;
+  padding: 10px 0px;
+  background-color: #0645ad;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.join-button:hover {
+  background-color: #003087;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px; /* Space between checkbox and text */
+}
+
+.remember-me label {
+  display: inline;
+  font-weight: normal;
+  margin: 0;
+}

@@ -1,0 +1,51 @@
+/* This section is for styling the heading */
+.preview-content h1, .preview-content h2, .preview-content h3, .preview-content h4, .preview-content h5, .preview-content h6{
+    clear: both;
+}
+
+.preview-content h1 {
+  font-size: 1.8em;
+  font-weight: bolder;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 0.3em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.preview-content h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 0.2em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.preview-content h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+}
+
+.preview-content h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 0.8em;
+  margin-bottom: 0.2em;
+}
+
+.preview-content h5 {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.preview-content h6 {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+/* ---------------------------------------------------- */

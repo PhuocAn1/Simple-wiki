@@ -1,0 +1,54 @@
+.wiki-container {
+  background-color: #f9f9f9;
+  color: #222;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.subheader {
+  display: flex;
+  gap: 20px;
+  padding: 10px 0;
+  border-bottom: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+}
+
+.subheader-link {
+  text-decoration: none;
+  color: #0645ad;
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+
+.subheader-link.active {
+  border-bottom: 2px solid #0645ad;
+  color: #222;
+}
+
+.subheader-link:hover:not(.active) {
+  text-decoration: underline;
+}
+
+.page-content {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #a2a9b1;
+  margin-top: 10px;
+}
+
+.page-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.page-content p {
+  /* color: #54595d; */
+  color: #222;
+  line-height: 1.6;
+}
+
+.username-heading {
+    text-align: left;
+    border-bottom: 1px solid;
+}

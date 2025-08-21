@@ -1,0 +1,134 @@
+/* This section is for styling the Table of content TOC */
+/* Container styling */
+
+#toc.toc {
+  background-color: #f8f9fa;
+  color: #3366CC;
+  padding: 16px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  max-width: 300px;
+  line-height: 1.5;
+}
+
+/* Heading (e.g., "Contents") */
+#toc .toctitle {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #f5f5f5;
+
+  display: flex;
+}
+
+/* Remove default list styling */
+#toc ul {
+  /* display: inline-block; */
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Indentation for nested levels */
+#toc ul ul {
+  padding-left: 20px;
+}
+
+/* List items */
+#toc li {
+  margin: 4px 0;
+}
+
+/* Link styling */
+#toc a {
+  text-decoration: none;
+  width: 100%;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: #3366CC;
+}
+
+#toc a:hover {
+  text-decoration: underline;
+}
+
+/* Numbering (if present) */
+#toc .tocnumber {
+  color: #3366CC;
+  margin-right: 6px;
+}
+/* ---------------------------------------------------- */
+/* Toc numbering logic */
+#toc {
+  counter-reset: toc-1;
+}
+
+/* Level 1 */
+#toc .toclevel-1 {
+  counter-increment: toc-1;
+  counter-reset: toc-2;
+}
+
+#toc .toclevel-1::before {
+  content: counter(toc-1) ". ";
+  font-weight: bold;
+}
+
+/* Level 2 */
+#toc .toclevel-2 {
+  counter-increment: toc-2;
+  counter-reset: toc-3;
+}
+
+#toc .toclevel-2::before {
+  content: counter(toc-1) "." counter(toc-2) ". ";
+}
+
+/* Level 3 */
+#toc .toclevel-3 {
+  counter-increment: toc-3;
+  counter-reset: toc-4;
+}
+
+#toc .toclevel-3::before {
+  content: counter(toc-1) "." counter(toc-2) "." counter(toc-3) ". ";
+}
+
+/* Level 4 */
+#toc .toclevel-4 {
+  counter-increment: toc-4;
+}
+
+#toc .toclevel-4::before {
+  content: counter(toc-1) "." counter(toc-2) "." counter(toc-3) "." counter(toc-4) ". ";
+}
+
+/* Level 5 */
+#toc .toclevel-5 {
+  counter-increment: toc-5;
+}
+
+#toc .toclevel-5::before {
+  content: counter(toc-1) "." counter(toc-2) "." counter(toc-3) "." counter(toc-4) "." counter(toc-5) ".";
+}
+
+/* Level 6 */
+#toc .toclevel-6 {
+  counter-increment: toc-6;
+}
+
+#toc .toclevel-6::before {
+  content: counter(toc-1) "." counter(toc-2) "." counter(toc-3) "." counter(toc-4) "." counter(toc-5) "." counter(toc-6) ".";
+}
+
+#toc li[class^="toclevel-"] {
+  align-items: baseline;
+  gap: 6px; /* spacing between number and text */
+}
+
+#toc li[class^="toclevel-"]::before {
+  display: inline;
+  font-weight: bold;
+  color: #3366CC;
+  margin-right: 4px;
+}
